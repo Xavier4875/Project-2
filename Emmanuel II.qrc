@@ -1,0 +1,15 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>nigil_results_image.webp</file>
+    <file>don_results_image.webp</file>
+    <file>victor_results_image.jpg</file>
+    <file>nigil_johnson.jpg</file>
+    <file>victor_emmanuel_2.png</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Don-Beyer.jpg</file>
+  </qresource>
+  <qresource prefix="newPrefix">
+    <file>Ritratto_di_S.M._Vittorio_Emanuele_II (2).jpg</file>
+  </qresource>
+</RCC>
