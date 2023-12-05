@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="newPrefix">
-    <file>DonBeyer2.jpg</file>
-  </qresource>
-  <qresource prefix="newPrefix">
-    <file>baltimore-riot.jpg</file>
-  </qresource>
-</RCC>
