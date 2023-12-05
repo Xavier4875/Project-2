@@ -6,32 +6,27 @@ from CandidatesLogic import *
 from ResultsLogic import *
 
 
-
-class mainLogic(QMainWindow, Ui_MainMenu):
+class MainLogic(QMainWindow, Ui_MainMenu):
 
     def __init__(self):
         super().__init__()
         self.setupUi(self)
 
-        self.VoteScreenButton.clicked.connect(lambda: self.vote())
-        self.pushButton.clicked.connect(lambda: self.candidate())
-        self.pushButton_2.clicked.connect(lambda: self.results())
-
-    def vote(self):
-        self.openVoteWindow()
-    def candidate(self):
-        self.openCandidateWindow()
-    def results(self):
-        self.openResultsWindow()
+        self.VoteScreenButton.clicked.connect(lambda: self.openVoteWindow())
+        self.pushButton.clicked.connect(lambda: self.openCandidateWindow())
+        self.pushButton_2.clicked.connect(lambda: self.openResultsWindow())
 
     def openVoteWindow(self):
-        voteWindow = VoteLogic()
-        voteWindow.show()
+        self.hide()
+        self.voteWindow = VoteLogic(self)
+        self.voteWindow.show()
 
     def openCandidateWindow(self):
-        CandidateWindow = CandidatesLogic()
-        CandidateWindow.show()
+        self.hide()
+        self.CandidateWindow = CandidatesLogic(self)
+        self.CandidateWindow.show()
 
     def openResultsWindow(self):
-        ResultsWindow = ResultsLogic()
-        ResultsWindow.show()
+        self.hide()
+        self.ResultsWindow = ResultsLogic(self)
+        self.ResultsWindow.show()
