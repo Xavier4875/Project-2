@@ -62,7 +62,7 @@ class Ui_VictorScreen(object):
         self.victor_screen_image = QtWidgets.QLabel(parent=self.centralwidget)
         self.victor_screen_image.setGeometry(QtCore.QRect(120, 10, 251, 311))
         self.victor_screen_image.setText("")
-        self.victor_screen_image.setPixmap(QtGui.QPixmap("victor_emmanuel_2.png"))
+        self.victor_screen_image.setPixmap(QtGui.QPixmap("vic_profile_image.jpg"))
         self.victor_screen_image.setScaledContents(True)
         self.victor_screen_image.setObjectName("victor_screen_image")
         VictorScreen.setCentralWidget(self.centralwidget)

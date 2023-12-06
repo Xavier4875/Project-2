@@ -22,7 +22,7 @@ class Ui_NigilScreen(object):
         self.nigil_profile_image.setGeometry(QtCore.QRect(100, 10, 221, 321))
         self.nigil_profile_image.setStyleSheet("image: url(:/newPrefix/nigil_johnson.jpg);")
         self.nigil_profile_image.setText("")
-        self.nigil_profile_image.setPixmap(QtGui.QPixmap("nigil_johnson.jpg"))
+        self.nigil_profile_image.setPixmap(QtGui.QPixmap("nigil_profile_image.jpg"))
         self.nigil_profile_image.setScaledContents(True)
         self.nigil_profile_image.setObjectName("nigil_profile_image")
         self.nigil_profile_image_label = QtWidgets.QLabel(parent=self.centralwidget)

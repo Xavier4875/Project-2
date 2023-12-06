@@ -22,7 +22,7 @@ class Ui_DonScreen(object):
         self.don_profile_image.setGeometry(QtCore.QRect(130, 10, 241, 331))
         self.don_profile_image.setStyleSheet("image: url(:/newPrefix/Don-Beyer.jpg);")
         self.don_profile_image.setText("")
-        self.don_profile_image.setPixmap(QtGui.QPixmap("Don-Beyer.jpg"))
+        self.don_profile_image.setPixmap(QtGui.QPixmap("don_profile_image.jpeg"))
         self.don_profile_image.setScaledContents(True)
         self.don_profile_image.setObjectName("don_profile_image")
         self.don_profile_image_label = QtWidgets.QLabel(parent=self.centralwidget)
