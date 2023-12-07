@@ -15,7 +15,7 @@ class ResultsLogic(QMainWindow, Ui_ResultsScreen):
         self.results_home_button.clicked.connect(lambda: self.results_home())
         self.displayResults()
 
-    def results_home(self):
+    def results_home(self) -> None:
         """Hides the results screen and shows the main menu
            This function also clears out results.csv; Each time the home button is clicked, the votes are erased."""
         with open('results.csv', 'w') as f:
