@@ -2,7 +2,7 @@ from mainLogic import *
 import sys
 
 
-def main():
+def main() -> None:
     """Opens the main menu"""
     app = QApplication(sys.argv)
     window = MainLogic()

@@ -5,7 +5,7 @@ import csv
 
 
 class ResultsLogic(QMainWindow, Ui_ResultsScreen):
-    def __init__(self, main_window):
+    def __init__(self, main_window) -> None:
         """Sets up the gui for the results screen and gives functionality to the home button.
            results_home_button calls the results_home function
            This function also calls displayResults() so the results are displayed automatically."""
@@ -23,7 +23,7 @@ class ResultsLogic(QMainWindow, Ui_ResultsScreen):
         self.hide()
         self.main_window.show()
 
-    def displayResults(self):
+    def displayResults(self) -> None:
         """This function displays the results. Variables are created to keep track of each candidate's vote tally."""
         vicVotes = 0
         nigilVotes = 0

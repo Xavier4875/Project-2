@@ -5,7 +5,7 @@ import csv
 
 
 class VoteLogic(QMainWindow, Ui_VoteScreen):
-    def __init__(self, main_window):
+    def __init__(self, main_window) -> None:
         """Sets up the gui for the vote screen and gives functionality to the submit and home buttons.
            vote_home_button calls the vote_home function.
            submit_button calls the submit function."""
@@ -15,12 +15,12 @@ class VoteLogic(QMainWindow, Ui_VoteScreen):
         self.submit_button.clicked.connect(lambda: self.submit())
         self.main_window = main_window
 
-    def vote_home(self):
+    def vote_home(self) -> None:
         """Hides the vote screen and shows the main menu"""
         self.hide()
         self.main_window.show()
 
-    def submit(self):
+    def submit(self) -> None:
         """Checks to see which candidate was selected and appends the csv file.
            If the voter selects Don and clicks 'submit', then this function will append 'don I' to the csv
            This also calls the vote_home function. When the submit button is clicked, the user is automatically returned
